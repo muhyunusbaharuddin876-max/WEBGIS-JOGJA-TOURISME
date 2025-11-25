@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jogja Tourism</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sidebar">
+    <h2>Jogja Tourism</h2>
+    <p>Dari Candi sampai Pantai — Semua di Peta Kita</p>
+    <div class="block">
+      <label>Profile:
+        <select id="profile">
+          <option value="driving">Driving (car)</option>
+          <option value="cycling">Cycling</option>
+          <option value="walking">Walking</option>
+        </select>
+      </label>
+      <button id="clear">Clear All</button>
+       </div>
+      <div class="block">
+      <button id="btn-matrix">Compute OD Matrix</button>
+      <button id="btn-trip">Optimize Trip (TSP)</button>
+    </div>
+     <h3>Daftar Lokasi</h3>
+    <div id="places-list"></div>
+     <div id="info"></div>
+    <h3>Stops (waypoints)</h3>
+    <ol id="stops-list"></ol>
+
+    <h3>OD Matrix (minutes)</h3>
+    <div id="matrix-container"></div>
+
+    <h3>Trip Order</h3>
+    <ol id="trip-order"></ol>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+  </script>
+</body>
+</html>
